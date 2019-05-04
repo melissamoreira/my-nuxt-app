@@ -5,8 +5,10 @@
                 v-model="userId"
                 type="text"
             />
+
             <button @click="onLoadUser">Load User</button>
         </div>
+
         <nuxt-link to="/">< Back Home</nuxt-link>
     </section>
 </template>
@@ -16,6 +18,7 @@ export default {
     data: () => ({
         userId: ''
     }),
+
     methods: {
         onLoadUser () {
             this.$router.push('/users/' + this.userId)
@@ -34,4 +37,3 @@ export default {
   text-align: center;
 }
 </style>
-

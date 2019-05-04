@@ -1,6 +1,10 @@
 <template>
     <section class="container">
-        <h1 class="title">User ID: <span>{{ $route.params.id }}</span></h1>
+        <h1 class="title">Products Page</h1>
+
+        <nuxt-link to="/products/a">Product A</nuxt-link>
+
+        <nuxt-link to="/products/b">Product B</nuxt-link>
 
         <nuxt-link to="/">< Back Home</nuxt-link>
     </section>
@@ -11,7 +15,6 @@
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -26,9 +29,4 @@
   color: #cc62c3;
   letter-spacing: 1px;
 }
-
-.title span {
-    text-transform: capitalize;
-}
 </style>
-

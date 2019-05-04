@@ -1,8 +1,8 @@
 <template>
     <section class="container">
-        <h1 class="title">User ID: <span>{{ $route.params.id }}</span></h1>
+        <h1 class="title">Product <span>{{ $route.params.pid }}</span></h1>
 
-        <nuxt-link to="/">< Back Home</nuxt-link>
+        <nuxt-link to="/products">< Back to Products</nuxt-link>
     </section>
 </template>
 
@@ -11,7 +11,6 @@
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -31,4 +30,3 @@
     text-transform: capitalize;
 }
 </style>
-
